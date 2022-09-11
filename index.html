@@ -12,21 +12,26 @@
 </head>
 <body>
     <header>
-        <div class="switch">
+        <div class="switch" id="home">
             <div class="flicker"></div>
             <div class="moon"></div>
         </div>
     </header>
 
-    <section class="main">
+    <section class="main" >
         <div class="main-text">
             
             <h1>  Hi! I am Mohammed Dolapo</h1>
             <p> Welcome to my page!</p>
-            <p> I am a software developer and UI/UX Designer.😊 </p>
+            <p> I am a Front End developer and UI/UX Designer. </p>
             <br>
-            <a href="#footer"> Contact me > </a>
+            <a href="#footer" class="contact-me"> Contact me > </a>
+            <br>
+            <!-- <button class="mt-2 cv-btn" > Download CV </button> -->
+            <a class="cv-link"  href="/img/cv.PNG" target="_blank"><i class="fa fa-download mt-4"  aria-hidden="true" ></i>Download CV</a>
         </div>
+        <!-- scroll top -->
+       
 
         <div class="hero-image">
             <div class="cube" id="react"></div>
@@ -52,9 +57,9 @@
         </a>
     </div>  -->
 
-    <h3 class="text-center  mt-5"> My Portfolio </h3>
+    <h3 class="text-center headings  mt-5"> My Portfolio </h3>
     <div class="bio "> <strong > About Me :</strong> I'm a new software developer based in Lagos,Nigeria. My Mission is to collabrote with tech agencies here 
-        in Nigeria and abroad to create create high-performance, rich interactive websites that work across all platforms, there are some projects I have worked on.</div>
+        in Nigeria and abroad to create high-performance, rich interactive websites that work across all platforms, these are some projects I have worked on.</div>
 
     <div class="container  mt-4">
         <div class="row gy-4">
@@ -77,8 +82,8 @@
                         <div class="card-body">
                             <h5 class="card-title"> Black Jack Game </h5>
                             <p> Blackjack is a casino banking game. The most widely played casino banking game in the world</p>
-                            <a href="https://laobellscountdown.netlify.app/" class="btn btn-outline-warning" target="_blank" > Live Demo</a>
-                            <a href="https://github.com/therealhhybrid/Time-Date-Countdown" class="btn btn-outline-warning" target="_blank" > Github</a>
+                            <a href="https://blackjack-app-p.netlify.app/" class="btn btn-outline-warning" target="_blank" > Live Demo</a>
+                            <a href="https://github.com/therealhhybrid/Black-Jack-App" class="btn btn-outline-warning" target="_blank" > Github</a>
                         </div>
                         </div>
             </div>
@@ -100,21 +105,34 @@
                     <div class="port-img" style="background-image: url(/img/sign\ in.PNG );"> </div>
                         <div class="card-body">
                             <h5 class="card-title"> Sign in </h5>
-                            <p> I built a responsive website using bootstrap frame work</p>
-                            <a href="https://youtube-clone-hybrid.netlify.app/" class="btn btn-outline-warning" target="_blank" > Live Demo</a>
+                            <p> The login page allows a user to gain access to site by entering their username and password </p>
+                            <a href="https://signin-pag.netlify.app/" class="btn btn-outline-warning" target="_blank" > Live Demo</a>
                             <a href="https://github.com/therealhhybrid/sign-page" class="btn btn-outline-warning" target="_blank" > Github</a>
                         </div>
             </div>
-        </div>
+            </div>
     </div>
     </div>
-       
+
+    <section class="contact  container" id="contact">
+        <h2 class="text-center headings mt-5">Contact</h2>
+
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Your name" class="name" required>
+            <input type="email" name="" id="" placeholder="Email address..." class="email" required>
+            <textarea name="" id="" cols="30"  rows="10" placeholder="write message here.." class="message" required></textarea>
+            <input type="submit" value="send" class="send-btn mb-3">
+        </form>
+    </section>
 
 
     <footer id="footer">
-        <div class="email">
+
+        <div class="profile "> </div>
+
+        <!-- <div class="email">
             <p class="h5"> mohammeddolapo06@gmail.com</p>
-        </div>
+        </div> -->
         <div class="social"> 
             <a href="https://github.com/therealhhybrid" target="_blank"> 
                 <div class="social-icon"> <i class="fa-brands  fa-github"></i></div>
@@ -128,12 +146,33 @@
             <a href="https://www.linkedin.com/in/mohammed-dolapo-9236b3240" target="_blank"> 
                 <div class="social-icon"> <i class="fa-brands fa-linkedin"></i></div>
             </a>
+
+            <a href="#home" class="scroll-top">
+                <i class="fa-solid scroll-top-color fa-arrow-up"></i>
+            </a>
         </div> 
-        <div class="copyright"> Copyright &copy; 2022 Therealhhybrid All rights reserved.</div>
+        
+        <div class="copyright"> Copyright &copy; 2022 Therealhhybrid </div>
     </footer>
 
+
+
+
+    <!-- email js link -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+     <!-- sweet alert js link -->
+     
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("o1S4Phc5RAee6RIur");
+    })();
+    </script>
+
+
     <script src="/script.js"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
